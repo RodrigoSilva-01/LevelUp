@@ -4,16 +4,14 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: rgb(36, 36, 36);
-}
-
 .header {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(26, 26, 26);
     padding: 10px 40px;
+    position: fixed;
 }
 
 .logo {
@@ -24,7 +22,7 @@ body {
 }
 
 .logo span {
-    color: #ff185d;
+    color: #ff183e;
 }
 
 .menu a {
@@ -34,12 +32,12 @@ body {
 }
 
 .menu a:hover {
-    color: #ff185d;
+    color: #ff183e;
     transition: 1s;
 }
 
 .cadastro button {
-    background-color: #ff185d;
+    background-color: #ff183e;
     border: none;
     color: white;
     padding: 5px 10px;
@@ -48,6 +46,106 @@ body {
 }
 
 .cadastro button:hover {
-    background-color: #ff2d6b;
+    background-color: #ff417a;
+    transition: 1s;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 1000vh;
+}
+
+ .main-bg {
+    width: 100%;
+    min-height: 80vh; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0) 100%), url("../images/imagem.jpg");
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+} 
+
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+
+.banner ul {
+    display: flex;
+    justify-content: center;
+    gap: 26px;
+    color: #9b9b9b;
+    font-weight: bolder;
+    margin-bottom: 8px;
+}
+
+.banner li:first-child {
+    list-style: none;
+}
+
+
+.banner h1 {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin: 3px 0;
+
+}
+
+.banner span {
+    color: #ff183e;
+}
+.banner .paragrafo {
+    color: #ff183e;
+}
+
+.banner p {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 6px 0;
+    color: rgb(180, 180, 180);
+}
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+    gap: 30px;
+}
+
+.btn button {
+    padding: 14px;
+    border-radius: 8px;
+    border: none;
+    font-size: 10px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}
+
+.btn #btn-ingresso {
+    background: #ff183e;
+}
+
+.btn #btn-ingresso:hover {
+    background: #ff417a;
+    transition: 1s;
+}
+
+.btn #btn-programacao {
+    background: #292929a2;
+    border: solid 1px black;
+}
+
+.btn #btn-programacao:hover {
+    background: #66666685;
     transition: 1s;
 }
